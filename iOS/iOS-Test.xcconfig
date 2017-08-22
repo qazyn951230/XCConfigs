@@ -1,0 +1,6 @@
+#include "iOS.xcconfig"
+#include "../Target/Test.xcconfig"
+
+// Runpath Search Paths
+// This is a list of paths to be added to the runpath search path list for the image being created. At runtime, dyld uses the runpath when searching for dylibs whose load path begins with @rpath/.
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)
