@@ -1,9 +1,5 @@
 #include "Project.xcconfig"
 
-// Code Signing Identity
-// The name, also known as the common name, of a valid code-signing certificate in a keychain within your keychain path.
-CODE_SIGN_IDENTITY = iPhone Developer
-
 // Debug Information Format
 DEBUG_INFORMATION_FORMAT = dwarf
 
@@ -22,6 +18,10 @@ GCC_OPTIMIZATION_LEVEL = 0
 
 // Preprocessor Macros
 GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
+
+// Other Code Signing Flags
+// A list of additional options to pass to codesign(1).
+OTHER_CODE_SIGN_FLAGS = --timestamp=none
 
 // Build Active Architecture Only
 ONLY_ACTIVE_ARCH = YES

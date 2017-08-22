@@ -1,0 +1,5 @@
+#include "../Project/Project-Debug.xcconfig"
+
+// Code Signing Identity
+// The name, also known as the common name, of a valid code-signing certificate in a keychain within your keychain path.
+CODE_SIGN_IDENTITY = iPhone Developer
