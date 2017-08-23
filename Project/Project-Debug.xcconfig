@@ -1,5 +1,9 @@
 #include "Project.xcconfig"
 
+// Strip Debug Symbols During Copy
+// Specifies whether binary files that are copied during the build, such as in a Copy Bundle Resources or Copy Files build phase, should be stripped of debugging symbols. It does not cause the linked product of a target to be stripped—use Strip Linked Product (STRIP_INSTALLED_PRODUCT) for that.
+COPY_PHASE_STRIP = NO
+
 // Debug Information Format
 DEBUG_INFORMATION_FORMAT = dwarf
 
@@ -17,14 +21,22 @@ ENABLE_TESTABILITY = YES
 GCC_OPTIMIZATION_LEVEL = 0
 
 // Preprocessor Macros
-GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1
+
+// Link-Time Optimization
+// No: Disabled. Do not use link-time optimization.
+LLVM_LTO = NO
+
+// Build Active Architecture Only
+ONLY_ACTIVE_ARCH = YES
 
 // Other Code Signing Flags
 // A list of additional options to pass to codesign(1).
 OTHER_CODE_SIGN_FLAGS = --timestamp=none
 
-// Build Active Architecture Only
-ONLY_ACTIVE_ARCH = YES
+// Strip Debug Symbols During Copy
+// Specifies whether binary files that are copied during the build, such as in a Copy Bundle Resources or Copy Files build phase, should be stripped of debugging symbols. It does not cause the linked product of a target to be stripped—use Strip Linked Product (STRIP_INSTALLED_PRODUCT) for that.
+STRIP_INSTALLED_PRODUCT = NO
 
 // Active Compilation Conditions
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG

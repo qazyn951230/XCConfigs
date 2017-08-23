@@ -104,10 +104,6 @@ CLANG_WARN_SUSPICIOUS_MOVE = YES
 // Unreachable Code
 CLANG_WARN_UNREACHABLE_CODE = YES
 
-// Strip Debug Symbols During Copy
-// Specifies whether binary files that are copied during the build, such as in a Copy Bundle Resources or Copy Files build phase, should be stripped of debugging symbols. It does not cause the linked product of a target to be stripped—use Strip Linked Product (STRIP_INSTALLED_PRODUCT) for that.
-COPY_PHASE_STRIP = NO
-
 // Enable Strict Checking of objc_msgSend Calls
 ENABLE_STRICT_OBJC_MSGSEND = YES
 
