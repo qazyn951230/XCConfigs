@@ -201,8 +201,24 @@ GCC_WARN_UNUSED_LABEL = YES
 // Unused Variables
 GCC_WARN_UNUSED_VARIABLE = YES
 
-SWIFT_VERSION = 3.0
+SWIFT_VERSION = 4.0
 
 // Versioning Name Prefix
 // Used as a prefix for the name of the version info symbol in the generated versioning source file. If you prefix your exported symbols you will probably want to set this to the same prefix.
 VERSION_INFO_PREFIX =
+
+// Block Capture of Autoreleasing
+// Warn about block captures of implicitly autoreleasing parameters.
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
+
+// Suspicious Commas
+// Warn about suspicious uses of the comma operator.
+CLANG_WARN_COMMA = YES
+
+// Range-based For Loops
+// Warn about ranged-based for loops.
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
+
+// Strict Prototypes
+// Warn about non-prototype declarations.
+CLANG_WARN_STRICT_PROTOTYPES = YES
