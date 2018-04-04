@@ -40,6 +40,8 @@ STRIP_INSTALLED_PRODUCT = YES
 // Active Compilation Conditions
 SWIFT_ACTIVE_COMPILATION_CONDITIONS =
 
+SWIFT_COMPILATION_MODE = wholemodule
+
 // Optimization Level
 // Fast, Whole Module Optimization:-O -whole-module-optimization
 SWIFT_OPTIMIZATION_LEVEL = -Owholemodule
