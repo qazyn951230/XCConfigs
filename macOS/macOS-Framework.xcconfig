@@ -1,0 +1,8 @@
+#include "macOS.xcconfig"
+#include "../Target/Framework.xcconfig"
+
+CLANG_ENABLE_OBJC_WEAK = YES
+
+FRAMEWORK_VERSION = A
+
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @loader_path/Frameworks @executable_path/../Frameworks

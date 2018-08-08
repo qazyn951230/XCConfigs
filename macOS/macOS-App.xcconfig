@@ -1,0 +1,6 @@
+#include "macOS.xcconfig"
+#include "../Target/App.xcconfig"
+
+GCC_DYNAMIC_NO_PIC = YES
+
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks

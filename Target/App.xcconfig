@@ -1,3 +1,1 @@
-// Dead Code Stripping
-// Activating this setting causes the -dead_strip flag to be passed to ld(1) via cc(1) to turn on dead code stripping.
 DEAD_CODE_STRIPPING = NO

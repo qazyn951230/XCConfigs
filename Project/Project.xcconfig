@@ -1,224 +1,131 @@
-// Always Search User Paths (Deprecated)
-// NOTICE: This setting is deprecated as of Xcode 8.3 and may not be supported in future versions. It is recommended that you disable the setting.
 ALWAYS_SEARCH_USER_PATHS = NO
 
-// Architectures
-// A list of the architectures for which the product will be built. This is usually set to a predefined build setting provided by the platform. If more than one architecture is specified, a universal binary will be produced.
 ARCHS = $(ARCHS_STANDARD)
 
-// Missing Localizability
-// Warn when a nonlocalized string is passed to a user interface method expecting a localized string.
 CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES
 
-// Misuse of 'nonnull'
-// Check for misuses of nonnull parameter and return types.
 CLANG_ANALYZER_NONNULL = YES
 
-// Suspicious Conversions of NSNumber and CFNumberRef
 CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE
 
-// Floating Point Value Used as Loop Counter
-// Warn on using a floating point value as a loop counter (CERT: FLP30-C, FLP30-CPP).
 CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES
 
-// Use of 'rand' Functions
-// Warn on uses of rand, random, and related functions, which produce predictable random number sequences. Use arc4random instead.
 CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES
 
-// Use of 'strcpy' and 'strcat'
-// Warn on uses of the strcpy and strcat functions, which can result in buffer overflows. Use strlcpy or strlcat instead.
 CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES
 
-// C++ Language Dialect
-CLANG_CXX_LANGUAGE_STANDARD = gnu++0x
+CLANG_CXX_LANGUAGE_STANDARD = gnu++14
 
-// C++ Standard Library
-// libstdc++: A traditional C++ standard library that works with GCC and the LLVM Compiler (default).
-// libc++: A highly optimized C++ standard library that works only with the LLVM Compiler, and is designed to support new C++11 features.
 CLANG_CXX_LIBRARY = libc++
 
-// Enable Modules (C and Objective-C)
-// Enables the use of modules for system APIs. System headers are imported as semantic modules instead of raw headers. This can result in faster builds and project indexing.
 CLANG_ENABLE_MODULES = YES
 
-// Objective-C Automatic Reference Counting
 CLANG_ENABLE_OBJC_ARC = YES
 
-// Duplicate Method Definitions
-// Warn about declaring the same method more than once within the same @interface.
-CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
 
-// Implicit Boolean Conversions
 CLANG_WARN_BOOL_CONVERSION = YES
 
-// Implicit Constant Conversions
+CLANG_WARN_COMMA = YES
+
 CLANG_WARN_CONSTANT_CONVERSION = YES
 
-// Overriding Deprecated Objective-C Methods
-// Warn if an Objective-C class either subclasses a deprecated class or overrides a method that has been marked deprecated.
 CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES
 
-// Direct usage of 'isa'
 CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR
 
-// Documentation Comments
-// Warns about issues in documentation comments (doxygen-style) such as missing or incorrect documentation tags.
 CLANG_WARN_DOCUMENTATION_COMMENTS = YES
 
-// Empty Loop Bodies
 CLANG_WARN_EMPTY_BODY = YES
 
-// Implicit Enum Conversions
 CLANG_WARN_ENUM_CONVERSION = YES
 
-// Implicit Signedness Conversions
-// Warn about implicit integer conversions that change the signedness of an integer value.
 CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO
 
-// Infinite Recursion
-// Warn if all paths through a function call itself.
 CLANG_WARN_INFINITE_RECURSION = YES
 
-// Implicit Integer to Pointer Conversions
 CLANG_WARN_INT_CONVERSION = YES
 
-// Unintentional Root Class
-// Warn about classes that unintentionally do not subclass a root class, such as NSObject.
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES
+
 CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES
 
-// Repeatedly using a __weak reference
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES
+
 CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = NO
 
-// Unintentional Root Class
-// Warn about classes that unintentionally do not subclass a root class, such as NSObject.
 CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR
 
-// Suspicious Implicit Conversions
-// Warn about various implicit conversions that can lose information or are otherwise suspicious.
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
+
+CLANG_WARN_STRICT_PROTOTYPES = YES
+
 CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES
 
-// Suspicious Moves
-// Warn about suspicious uses of std::move.
 CLANG_WARN_SUSPICIOUS_MOVE = YES
 
-// Unreachable Code
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE
+
 CLANG_WARN_UNREACHABLE_CODE = YES
 
-// Enable Strict Checking of objc_msgSend Calls
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
+
+CODE_SIGN_STYLE = Manual
+
 ENABLE_STRICT_OBJC_MSGSEND = YES
 
-// C Language Dialect
-GCC_C_LANGUAGE_STANDARD = gnu99
+GCC_C_LANGUAGE_STANDARD = gnu11
 
-// Generate Position-Dependent Code
-// Faster function calls for applications. Not appropriate for shared libraries, which need to be position-independent.
 GCC_DYNAMIC_NO_PIC = NO
 
-// Enable Objective-C Exceptions
-// This setting enables @try/@catch/@throw syntax for handling exceptions in Objective-C code. Only applies to Objective-C.
 GCC_ENABLE_OBJC_EXCEPTIONS = YES
 
-// Generate Debug Symbols
-// Enables or disables generation of debug symbols. When debug symbols are enabled, the level of detail can be controlled by the Level of Debug Symbols build setting.
 GCC_GENERATE_DEBUGGING_SYMBOLS = YES
 
-// No Common Blocks
-// In C, allocate even uninitialized global variables in the data section of the object file, rather than generating them as common blocks. This has the effect that if the same variable is declared (without extern) in two different compilations, you will get an error when you link them.
 GCC_NO_COMMON_BLOCKS = YES
 
-// Precompile Prefix Header
-// Generates a precompiled header for the prefix header, which should reduce overall build times.
 GCC_PRECOMPILE_PREFIX_HEADER = NO
 
-// Enforce Strict Aliasing (GCC_STRICT_ALIASING)
-// Optimize code by making more aggressive assumptions about whether pointers can point to the same objects as other pointers.
 GCC_STRICT_ALIASING = YES
 
-// Symbols Hidden by Default
-// When enabled, all symbols are declared private extern unless explicitly marked to be exported using attribute((visibility("default"))) in code. If not enabled, all symbols are exported unless explicitly marked as private extern.
 GCC_SYMBOLS_PRIVATE_EXTERN = NO
 
-// Statics are Thread-Safe
-// Emits extra code to use the routines specified in the C++ ABI for thread-safe initialization of local statics. You can disable this option to reduce code size slightly in code that doesn't need to be thread-safe.
 GCC_THREADSAFE_STATICS = NO
 
-// Implicit Conversion to 32 Bit Type
 GCC_WARN_64_TO_32_BIT_CONVERSION = YES
 
-// Missing Fields in Structure Initializers
 GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES
 
-// Missing Function Prototypes
 GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO
 
-// Pointer Sign Comparison
-// Warn when pointers passed via arguments or assigned to a variable differ in sign.
 GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES
 
-// Mismatched Return Type
 GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR
 
-// Incomplete Objective-C Protocols
-// Warn if methods required by a protocol are not implemented in the class adopting it. Only applies to Objective-C.
 GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES
 
-// Check Switch Statements (GCC_WARN_CHECK_SWITCH_STATEMENTS)
-// Warn whenever a switch statement has an index of enumeral type and lacks a case for one or more of the named codes of that enumeration. The presence of a default label prevents this warning. Case labels outside the enumeration range also provoke warnings when this option is used.
 GCC_WARN_CHECK_SWITCH_STATEMENTS = YES
 
-// Four Character Literals
-// Warn about four-char literals (for example, macOS-style OSTypes: APPL).
 GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES
 
-// Initializer Not Fully Bracketed
-// Warn if an aggregate or union initializer is not fully bracketed.
 GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES
 
-// Missing Braces and Parentheses
-// Warn if parentheses are omitted in certain contexts, such as when there is an assignment in a context where a truth value is expected, or when operators are nested whose precedence causes confusion. Also, warn about constructions where there may be confusion as to which if statement an else branch belongs.
 GCC_WARN_MISSING_PARENTHESES = YES
 
-// Sign Comparison
-// Warn when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned.
 GCC_WARN_SIGN_COMPARE = YES
 
-// Typecheck Calls to printf/scanf
-// Check calls to printf and scanf to make sure that the arguments supplied have types appropriate to the format string specified, and that the conversions specified in the format string make sense.
 GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES
 
-// Undeclared Selector
 GCC_WARN_UNDECLARED_SELECTOR = YES
 
-// Uninitialized Variables
 GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE
 
-// Unused Functions
-// Warn whenever a static function is declared but not defined or a noninline static function is unused.
 GCC_WARN_UNUSED_FUNCTION = YES
 
 GCC_WARN_UNUSED_LABEL = YES
 
-// Unused Variables
 GCC_WARN_UNUSED_VARIABLE = YES
 
 SWIFT_VERSION = 4.0
 
-// Versioning Name Prefix
-// Used as a prefix for the name of the version info symbol in the generated versioning source file. If you prefix your exported symbols you will probably want to set this to the same prefix.
-VERSION_INFO_PREFIX =
-
-// Block Capture of Autoreleasing
-// Warn about block captures of implicitly autoreleasing parameters.
-CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES
-
-// Suspicious Commas
-// Warn about suspicious uses of the comma operator.
-CLANG_WARN_COMMA = YES
-
-// Range-based For Loops
-// Warn about ranged-based for loops.
-CLANG_WARN_RANGE_LOOP_ANALYSIS = YES
-
-// Strict Prototypes
-// Warn about non-prototype declarations.
-CLANG_WARN_STRICT_PROTOTYPES = YES
+VERSION_INFO_PREFIX = 

@@ -1,52 +1,29 @@
 #include "Project.xcconfig"
 
-// Strip Debug Symbols During Copy
-// Specifies whether binary files that are copied during the build, such as in a Copy Bundle Resources or Copy Files build phase, should be stripped of debugging symbols. It does not cause the linked product of a target to be stripped—use Strip Linked Product (STRIP_INSTALLED_PRODUCT) for that.
 COPY_PHASE_STRIP = NO
 
-// Debug Information Format
 DEBUG_INFORMATION_FORMAT = dwarf
 
-// Enable Foundation Assertions
-// Controls whether assertion logic provided by NSAssert is included in the preprocessed source code or is elided during preprocessing. Disabling assertions can improve code performance.
 ENABLE_NS_ASSERTIONS = YES
 
-// Enable Testability
-// When this setting is activated, the product will be built with options appropriate for running automated tests, such as making private interfaces accessible to the tests. This may result in tests running slower than they would without testability enabled.
 ENABLE_TESTABILITY = YES
 
-// Optimization Level
-// None: Do not optimize. -O0
-// With this setting, the compiler's goal is to reduce the cost of compilation and to make debugging produce the expected results. Statements are independent—if you stop the program with a breakpoint between statements, you can then assign a new value to any variable or change the program counter to any other statement in the function and get exactly the results you would expect from the source code.
 GCC_OPTIMIZATION_LEVEL = 0
 
-// Preprocessor Macros
 GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1
 
-// Link-Time Optimization
-// No: Disabled. Do not use link-time optimization.
 LLVM_LTO = NO
 
-// Build Active Architecture Only
 ONLY_ACTIVE_ARCH = YES
 
-// Other Code Signing Flags
-// A list of additional options to pass to codesign(1).
 OTHER_CODE_SIGN_FLAGS = --timestamp=none
 
-// Strip Debug Symbols During Copy
-// Specifies whether binary files that are copied during the build, such as in a Copy Bundle Resources or Copy Files build phase, should be stripped of debugging symbols. It does not cause the linked product of a target to be stripped—use Strip Linked Product (STRIP_INSTALLED_PRODUCT) for that.
 STRIP_INSTALLED_PRODUCT = NO
 
-// Active Compilation Conditions
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG
 
 SWIFT_COMPILATION_MODE = singlefile
 
-// Optimization Level
-// None: Compile without any optimization. -Onone
 SWIFT_OPTIMIZATION_LEVEL = -Onone
 
-// Validate Built Product
-// If enabled, perform validation checks on the product as part of the build process.
 VALIDATE_PRODUCT = NO
