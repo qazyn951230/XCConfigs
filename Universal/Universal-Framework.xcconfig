@@ -1,4 +1,6 @@
 #include "Universal.xcconfig"
 #include "../Target/Framework.xcconfig"
 
+COMBINE_HIDPI_IMAGES = YES
+
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
